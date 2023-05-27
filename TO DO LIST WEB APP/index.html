@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TO DO APP</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="mainWrapper">
+      <div class="toggleBackgroundImage backgroundImageContainerDark">
+        <div class="wraper">
+          <div class="flex">
+            <div class="TodoName">TO DO </div>
+            <div class="toggle-container">
+              <img
+                id="toggle-image"
+                src="images/icon-moon.svg"
+                alt="Light Mode"
+              />
+            </div>
+
+            <!-- Audio tag for the sound effect -->
+            <audio id="toggle-sound">
+              <source src="audio/mixkit-cool-interface-click-tone-2568.wav" />
+            </audio>
+          </div>
+          <!--  Add Input Tag-->
+          <div class="inputFirst">
+            <input
+              type="text"
+              id="input-field"
+              class="inputForChangeColors"
+              placeholder="Currently typing"
+            />
+            <button id="add-button">+</button>
+          </div>
+        </div>
+
+        <ul id="todo-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

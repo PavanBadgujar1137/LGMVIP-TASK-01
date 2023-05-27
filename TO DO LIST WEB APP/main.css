@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Josefin+Sans:wght@300;600;700&family=Montserrat:wght@300;400;500;600&family=Poppins:wght@400;500&display=swap");
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Josefin Sans";
+  font-style: normal;
+}
+
+/* Main wrapper styles */
+.mainWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/* Background image container styles for dark mode */
+.backgroundImageContainerDark {
+  background-image: url("images/bg-desktop-dark.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 1419px;
+  height: 300px;
+}
+
+/* Background image container styles for light mode */
+.backGroundImageContainerLight {
+  background: url("images/bg-desktop-light.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 1419px;
+  height: 300px;
+}
+
+/* Wrapper styles */
+.wraper {
+  width: 541px;
+  padding-top: 70px;
+  max-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/* TodoName styles */
+.TodoName {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: 15px;
+  color: #ffffff;
+}
+
+/* Flex container styles */
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: rgb(14, 14, 14);
+  color: #f2f2f2;
+}
+
+/* Input field and add button container styles */
+.inputFirst {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/* Input field styles */
+#input-field {
+  height: 64px;
+  width: 80%;
+  margin-top: 47px;
+  outline: none;
+  border-radius: 5px;
+  border-color: transparent;
+}
+
+/* Add button styles */
+#add-button {
+  height: 64px;
+  width: 50px;
+  margin-top: 47px;
+  font-size: 25px;
+  color: rgb(143, 114, 114);
+  border-radius: 10px;
+  border-color: transparent;
+}
+
+/* Placeholder styles for input field */
+.inputForChangeColors::placeholder {
+  padding-left: 10px;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: -0.25px;
+  display: flex;
+  align-items: center;
+}
+
+/* Input field styles */
+input {
+  font-size: 25px;
+  padding: 8px;
+}
+
+/* Todo list styles */
+#todo-list {
+  width: 540px;
+  list-style: none;
+  background-color: white;
+  color: black;
+  height: fit-content;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+/* Three items container styles */
+.threeItems {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 24px;
+  margin: 12px 0;
+  align-items: center;
+  border-bottom: 1px solid #acb3f7;
+}
+
+/* Two items container styles */
+.twolistAndremove {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+/* Radio button checked styles */
+.radioBtn {
+  text-decoration: line-through;
+}
+
+/* Remove button styles */
+.removeBtn {
+  padding: 5px;
+  background-color: #25273d;
+  color: wheat;
+  border-color: #25273d;
+  box-shadow: none;
+}
+
+/* Media Queries */
+
+/* Responsive styles for smartphones */
+@media (max-width: 480px) {
+  .wraper {
+    width: 100%;
+    padding-top: 40px;
+  }
+
+  .TodoName {
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: 10px;
+  }
+
+  .inputFirst {
+    display: flex;
+    margin-top: 10px;
+  }
+
+  #input-field {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  #add-button {
+    margin-top: 20px;
+  }
+
+  #todo-list {
+    width: 100%;
+  }
+}
+
+/* Responsive styles for tablets */
+@media (max-width: 768px) {
+  .mainWrapper {
+    width: 100%;
+  }
+
+  .backgroundImageContainerDark,
+  .backGroundImageContainerLight {
+    width: 100%;
+    height: 200px;
+  }
+
+  .wraper {
+    width: 80%;
+  }
+
+  #input-field {
+    width: 70%;
+  }
+}
